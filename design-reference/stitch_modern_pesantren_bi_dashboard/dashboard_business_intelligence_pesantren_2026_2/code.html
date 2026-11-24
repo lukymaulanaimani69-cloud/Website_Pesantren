@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-low":"#f5f3ee","surface-bright":"#fbf9f4","on-background":"#1b1c19","error":"#ba1a1a","surface-variant":"#e4e2dd","surface-container-high":"#eae8e3","on-error-container":"#93000a","secondary-fixed-dim":"#e8c178","on-error":"#ffffff","surface":"#fbf9f4","tertiary-fixed":"#ffdbd0","tertiary-container":"#661f07","surface-container-lowest":"#ffffff","background":"#fbf9f4","on-surface":"#1b1c19","inverse-primary":"#a4d0bf","surface-dim":"#dbdad5","on-secondary-container":"#775a1b","on-tertiary-fixed-variant":"#7b2e15","on-primary-fixed":"#002118","tertiary-fixed-dim":"#ffb59e","primary":"#00271e","error-container":"#ffdad6","on-surface-variant":"#414845","inverse-on-surface":"#f2f1ec","on-primary-fixed-variant":"#254e41","secondary":"#775a1b","on-primary":"#ffffff","primary-container":"#133e32","surface-container-highest":"#e4e2dd","on-secondary-fixed":"#261900","surface-tint":"#3d6659","outline":"#717975","on-primary-container":"#7ea999","on-secondary-fixed-variant":"#5c4202","tertiary":"#450e00","on-tertiary-container":"#eb8464","secondary-container":"#fdd589","on-tertiary-fixed":"#3a0b00","outline-variant":"#c0c8c3","primary-fixed":"#bfecdb","on-secondary":"#ffffff","on-tertiary":"#ffffff","secondary-fixed":"#ffdea4","primary-fixed-dim":"#a4d0bf","inverse-surface":"#30312e","surface-container":"#f0eee9"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"gutter":"1.5rem","margin":"2.5rem","margin-mobile":"1rem","space-xl":"2.5rem","space-md":"1rem","gutter-mobile":"1rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xs":"0.25rem"},fontFamily:{"title-sm":["Plus Jakarta Sans"],"headline-md":["Playfair Display"],"headline-lg":["Playfair Display"],"title-lg":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Playfair Display"],"body-lg":["Plus Jakarta Sans"],"headline-sm":["Playfair Display"],"display-lg":["Playfair Display"],"body-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"display-lg-mobile":["Playfair Display"]},fontSize:{"title-sm":["14px",{lineHeight:"20px",fontWeight:"600"}],"headline-md":["24px",{lineHeight:"32px",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"600"}],"title-lg":["18px",{lineHeight:"24px",fontWeight:"700"}],"label-lg":["14px",{lineHeight:"20px",fontWeight:"500"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.06em",fontWeight:"600"}],"headline-lg-mobile":["26px",{lineHeight:"34px",letterSpacing:"0em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.02em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"600"}],"title-md":["16px",{lineHeight:"22px",fontWeight:"600"}],"display-lg-mobile":["34px",{lineHeight:"42px",letterSpacing:"-0.01em",fontWeight:"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-primary-container text-on-primary z-50 flex flex-col justify-between shadow-2xl"><div class="flex flex-col"><div class="p-space-lg flex items-center gap-space-sm border-b border-primary/50"><img alt="Profile" class="w-10 h-10 rounded-full object-cover ring-2 ring-secondary-fixed" src="https://lh3.googleusercontent.com/aida/ALJJyrAMO2VU7Y3LkDJ035tqubR9ZRdrChr8Qv6F3vQD-dYGmTYT6cR3PDc2gOZZXrmHLsWCpkxZp4qD66kc6Oa-lMNycZE0z2Bjge9oDqVzUOVEYxIQQzSy3zgwiz97tc3YFBBV6ROqga9IEnGeFNPRoXxAqL15znDN4xHsQBPFO0xlj8yY9XmpzARQMuS8CkiFxtrN_HBgm7b8or-uLB14FbRryxOe372LeTv1J3g0fFfQ1Z0cgH7Cqm8Bew"/><div class="flex flex-col"><span class="font-title-md text-title-md text-secondary-fixed font-bold leading-tight">PDR EXECUTIVE</span><span class="font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase">Portal BI &amp; Manajemen</span></div></div><div class="px-space-md py-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-primary-container/70 px-space-sm">Manajemen Utama</span></div><nav class="px-space-sm flex flex-col gap-1" data-active-classes="bg-primary text-secondary-fixed font-bold shadow-inner"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-2.5 rounded transition-all bg-primary text-secondary-fixed font-bold shadow-inner" data-path="dashboard-bi-dan-cms" href="#"><span class="material-symbols-outlined text-[20px]">monitoring</span>Dashboard BI Eksekutif</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded text-on-primary-container hover:bg-primary/50 hover:text-on-primary transition-all font-label-md text-label-md" data-path="bi-akademik-dan-santri" href="#"><span class="material-symbols-outlined text-[20px]">school</span>Akademik &amp; Tahfidz</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded text-on-primary-container hover:bg-primary/50 hover:text-on-primary transition-all font-label-md text-label-md" data-path="bi-keuangan-dan-infaq" href="#"><span class="material-symbols-outlined text-[20px]">payments</span>Keuangan, SPP &amp; Infaq</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded text-on-primary-container hover:bg-primary/50 hover:text-on-primary transition-all font-label-md text-label-md" data-path="bi-cms-warta" href="#"><span class="material-symbols-outlined text-[20px]">edit_note</span>CMS Berita &amp; Agenda</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded text-on-primary-container hover:bg-primary/50 hover:text-on-primary transition-all font-label-md text-label-md" data-path="bi-sambang-santri" href="#"><span class="material-symbols-outlined text-[20px]">badge</span>Verifikasi Sambang</a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded text-on-primary-container hover:bg-primary/50 hover:text-on-primary transition-all font-label-md text-label-md" data-path="bi-psb-admissions" href="#"><span class="material-symbols-outlined text-[20px]">how_to_reg</span>Seleksi &amp; Data PSB</a></nav></div><div class="p-space-md border-t border-primary/50 flex flex-col gap-2"><a class="flex items-center gap-space-sm px-space-sm py-2 text-secondary-fixed hover:text-on-primary font-label-md text-label-md transition-colors" data-path="beranda" href="#"><span class="material-symbols-outlined text-[18px]">arrow_back</span>Kembali ke Web Publik</a><div class="flex items-center gap-space-sm pt-2 text-on-primary-container font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-secondary-fixed">verified_user</span><span>Terkoneksi: Majlis Kepegawaian</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/90 backdrop-blur-xl border-b border-surface-variant z-40 flex items-center justify-between px-margin shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-sm font-label-md text-label-md text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-secondary">domain</span><span>Pondok Pesantren Damanhuri Romly Genggong • Pusat Kendali Terpadu</span></div><div class="flex items-center gap-space-md"><div class="relative hidden sm:block"><input class="w-56 pl-8 pr-3 py-1.5 font-body-sm text-body-sm bg-surface-container-high rounded border border-surface-variant focus:outline-none focus:border-secondary text-on-surface" placeholder="Cari data santri / arsip..." type="text"/><span class="material-symbols-outlined absolute left-2 top-2 text-on-surface-variant text-[16px]">search</span></div><button class="p-2 text-on-surface-variant hover:text-on-surface relative"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></button><div class="flex items-center gap-space-sm pl-space-sm border-l border-surface-variant"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrAMO2VU7Y3LkDJ035tqubR9ZRdrChr8Qv6F3vQD-dYGmTYT6cR3PDc2gOZZXrmHLsWCpkxZp4qD66kc6Oa-lMNycZE0z2Bjge9oDqVzUOVEYxIQQzSy3zgwiz97tc3YFBBV6ROqga9IEnGeFNPRoXxAqL15znDN4xHsQBPFO0xlj8yY9XmpzARQMuS8CkiFxtrN_HBgm7b8or-uLB14FbRryxOe372LeTv1J3g0fFfQ1Z0cgH7Cqm8Bew"/><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Admin Majlis</span><span class="font-label-sm text-label-sm text-secondary leading-tight">Super Administrator</span></div></div></div></header><main class="relative pt-16 w-full min-h-screen bg-surface"><div class="flex flex-col w-full">
+<!-- Top Executive Filter & Hijri Context Bar -->
+<section class="px-margin py-space-md bg-surface-container-low flex flex-col xl:flex-row xl:items-center justify-between gap-space-md shadow-sm">
+<div class="flex flex-wrap items-center gap-space-md">
+<!-- Hijri-Masehi Dual Calendar Tile -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-2 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">calendar_month</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-title-sm text-primary font-bold">14 Syawal 1447 H</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed">Masehi 2026</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Rabu, 01 April 2026 • Pekan Pendidikan Genap</span>
+</div>
+</div>
+<!-- Cloud Sync Realtime Status -->
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-2.5 rounded-lg shadow-sm">
+<span class="relative flex h-2.5 w-2.5 mr-1">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-surface-tint opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary-container"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-semibold">Cloud BI Sync: Live</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant pl-1">(12 dtk lalu)</span>
+</div>
+<!-- Term Selector -->
+<div class="flex items-center gap-2 bg-surface-container-lowest px-space-md py-1.5 rounded-lg shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Periode:</span>
+<select class="bg-transparent font-title-sm text-title-sm text-primary font-bold focus:outline-none cursor-pointer">
+<option selected="">Semester Genap TA 2025/2026</option>
+<option>Semester Ganjil TA 2025/2026</option>
+<option>Rekapitulasi Tahunan 2025</option>
+</select>
+</div>
+</div>
+<!-- Switcher Campus Unit & Fast Action -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center bg-surface-container-high p-1 rounded-lg">
+<button class="px-space-md py-1.5 rounded-md font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all">Pusat Terpadu</button>
+<button class="px-space-md py-1.5 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-all">Kampus Putra</button>
+<button class="px-space-md py-1.5 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-all">Kampus Putri</button>
+<button class="px-space-md py-1.5 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-all">Ma'had Aly</button>
+</div>
+<button class="flex items-center gap-1.5 bg-secondary-fixed text-on-secondary-fixed px-space-md py-2 rounded-lg font-label-md text-label-md font-semibold hover:bg-secondary-fixed-dim transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Ekspor BI</span>
+</button>
+</div>
+</section>
+<!-- Main Container -->
+<div class="px-margin py-space-xl flex flex-col gap-space-xl">
+<!-- Executive Top Title & Greeting -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Portal Eksekutif Pesantren Damanhuri Romly</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Genggong, Probolinggo</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary font-bold">Ringkasan Kendali Mutu &amp; Operasional 2026</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Laporan terintegrasi santri, stabilitas kas syahriah, seleksi PSB 2026/2027, dan ketertiban sambang santri.</p>
+</div>
+<!-- Quick Operational Trigger Buttons -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="flex items-center gap-1.5 bg-surface-container-lowest text-primary px-space-md py-2.5 rounded font-label-md text-label-md font-semibold shadow-sm hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span>Verifikasi Sambang Massal</span>
+</button>
+<button class="flex items-center gap-1.5 bg-surface-container-lowest text-primary px-space-md py-2.5 rounded font-label-md text-label-md font-semibold shadow-sm hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-secondary text-[18px]">campaign</span>
+<span>Maklumat Masyayikh</span>
+</button>
+<button class="flex items-center gap-1.5 bg-primary text-on-primary px-space-md py-2.5 rounded font-label-md text-label-md font-semibold shadow-md hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">edit_document</span>
+<span>Kelola CMS Berita</span>
+</button>
+</div>
+</div>
+<!-- 4 KPI Summary Bento Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-lg">
+<!-- Card 1: Total Santri Aktif -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-bold">Populasi Santri Mukim</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-lg text-display-lg text-primary font-bold">2.148</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Jiwa</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">groups</span>
+</div>
+</div>
+<!-- Inline Sparkline Trend Chart -->
+<div class="my-space-md">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span>Tren 6 Bulan Terakhir</span>
+<span class="text-primary font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[16px] text-surface-tint">trending_up</span> +5.4% YoY
+            </span>
+</div>
+<svg class="w-full h-10 text-primary-container" fill="none" viewbox="0 0 160 30">
+<path d="M0 24 Q 25 22, 50 18 T 100 12 T 130 9 L 160 4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M0 24 Q 25 22, 50 18 T 100 12 T 130 9 L 160 4 L 160 30 L 0 30 Z" fill="currentColor" fill-opacity="0.08"></path>
+<circle cx="160" cy="4" fill="#C5A15B" r="3.5"></circle>
+</svg>
+</div>
+<div class="pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Okupansi Asrama:</span>
+<span class="font-title-sm text-title-sm text-primary font-bold">92% (Tersisa 186 Ranjang)</span>
+</div>
+</div>
+<!-- Card 2: Keuangan Syahriah & Infaq -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-bold">Syahriah &amp; Wakaf Maret</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-md text-headline-md text-primary font-bold">Rp 842,5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Juta</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[26px]">account_balance_wallet</span>
+</div>
+</div>
+<!-- Collection Rate Progress Bar -->
+<div class="my-space-md flex flex-col gap-1.5">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Collection Rate (SPP)</span>
+<span class="text-secondary font-bold">96.8%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 96.8%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Target Anggaran Rp 870 Jt</span>
+</div>
+<div class="pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Infaq Digital (QRIS/VA):</span>
+<span class="font-title-sm text-title-sm text-primary font-bold">Rp 128,4 Jt</span>
+</div>
+</div>
+<!-- Card 3: Pendaftar Seleksi PSB -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-bold">Pendaftar PSB 2026/2027</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-lg text-display-lg text-primary font-bold">642</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pendaftar</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">how_to_reg</span>
+</div>
+</div>
+<!-- PSB Status Ring or Metric -->
+<div class="my-space-md flex items-center justify-between bg-surface-container-low p-2.5 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Status Berkas</span>
+<span class="font-title-sm text-title-sm text-primary font-bold">428 Terverifikasi</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Capaian Kuota</span>
+<span class="font-title-sm text-title-sm text-surface-tint font-bold">107% (Target 600)</span>
+</div>
+</div>
+<div class="pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Ujian Gelombang II:</span>
+<span class="font-title-sm text-title-sm text-primary font-bold">12 Hari Lagi</span>
+</div>
+</div>
+<!-- Card 4: Reservasi Sambang Santri -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-bold">Kunjungan Sambang Pekan Ini</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-lg text-display-lg text-primary font-bold">312</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kunjungan</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[26px]">badge</span>
+</div>
+</div>
+<div class="my-space-md flex items-center gap-space-sm">
+<div class="flex-1 bg-surface-container-low p-2 rounded text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Disetujui</span>
+<span class="font-title-sm text-title-sm text-primary font-bold">286 Tiket</span>
+</div>
+<div class="flex-1 bg-surface-container-low p-2 rounded text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Tertunda</span>
+<span class="font-title-sm text-title-sm text-error font-bold">26 Data</span>
+</div>
+</div>
+<div class="pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Durasi Kunjungan:</span>
+<span class="font-title-sm text-title-sm text-primary font-bold">Ø 45 Menit / Sesi</span>
+</div>
+</div>
+</div>
+<!-- Analytical Visualizations Grid 2026 -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Chart 1: Capaian Tahfidz & Turats (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Evaluasi Sanad &amp; Akademik</span>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">Capaian Hafalan Al-Qur'an &amp; Kitab Kuning</h2>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-3 h-3 rounded-sm bg-primary"></span> Capaian Aktual
+            </div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-3 h-3 rounded-sm bg-secondary-fixed"></span> Target Kurikulum
+            </div>
+</div>
+</div>
+<!-- Comparative Progress Bar Visualization -->
+<div class="flex flex-col gap-space-md my-space-sm">
+<!-- Item 1: Tahfidz Al-Qur'an 30 Juz -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-baseline font-body-md text-body-md">
+<span class="font-semibold text-primary">Tahfidz Takhasus (Target Mutqin 30 Juz)</span>
+<span class="font-title-sm text-title-sm text-primary">318 / 340 Santri (93.5%)</span>
+</div>
+<div class="w-full bg-surface-container-high h-3 rounded-full relative overflow-hidden">
+<div class="bg-secondary-fixed-dim h-full absolute left-0" style="width: 100%"></div>
+<div class="bg-primary h-full absolute left-0 rounded-full" style="width: 93.5%"></div>
+</div>
+</div>
+<!-- Item 2: Fathul Qorib & Taqrib -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-baseline font-body-md text-body-md">
+<span class="font-semibold text-primary">Fiqh: Kitab Fathul Qorib Mujib (Ibtida'iyah - Wustha)</span>
+<span class="font-title-sm text-title-sm text-primary">780 / 820 Santri (95.1%)</span>
+</div>
+<div class="w-full bg-surface-container-high h-3 rounded-full relative overflow-hidden">
+<div class="bg-secondary-fixed-dim h-full absolute left-0" style="width: 100%"></div>
+<div class="bg-primary h-full absolute left-0 rounded-full" style="width: 95.1%"></div>
+</div>
+</div>
+<!-- Item 3: Alfiyah Ibnu Malik -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-baseline font-body-md text-body-md">
+<span class="font-semibold text-primary">Gramatika: Nadzom Alfiyah Ibnu Malik (Ulya)</span>
+<span class="font-title-sm text-title-sm text-primary">412 / 460 Santri (89.5%)</span>
+</div>
+<div class="w-full bg-surface-container-high h-3 rounded-full relative overflow-hidden">
+<div class="bg-secondary-fixed-dim h-full absolute left-0" style="width: 100%"></div>
+<div class="bg-primary h-full absolute left-0 rounded-full" style="width: 89.5%"></div>
+</div>
+</div>
+<!-- Item 4: Ihya Ulumiddin & Fathul Mu'in -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-baseline font-body-md text-body-md">
+<span class="font-semibold text-primary">Dirasah Turats: Fathul Mu'in &amp; Ihya' (Ma'had Aly)</span>
+<span class="font-title-sm text-title-sm text-primary">226 / 240 Mahasantri (94.1%)</span>
+</div>
+<div class="w-full bg-surface-container-high h-3 rounded-full relative overflow-hidden">
+<div class="bg-secondary-fixed-dim h-full absolute left-0" style="width: 100%"></div>
+<div class="bg-primary h-full absolute left-0 rounded-full" style="width: 94.1%"></div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low p-space-md rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">military_tech</span>
+<span class="font-body-sm text-body-sm text-on-surface">Wisuda Sanad Mutqin dijadwalkan: <strong>18 Dzulqa'dah 1447 H</strong></span>
+</div>
+<a class="font-label-md text-label-md text-secondary font-bold hover:underline" href="#">Detail Kitab →</a>
+</div>
+</div>
+<!-- Chart 2: Demografi Asal Santri Nusantara (5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Sebaran Santri</span>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">Demografi Asal Nusantara</h2>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">travel_explore</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Distribusi asal domisili santri dari 28 Provinsi di Indonesia.</p>
+</div>
+<!-- Demography Donut / Distribution Breakdown -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<div class="w-3.5 h-3.5 rounded bg-primary"></div>
+<span class="font-body-md text-body-md font-semibold text-primary">Tapal Kuda &amp; Jawa Timur</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-title-sm font-bold text-primary">1.240</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-highest px-1.5 py-0.5 rounded">57.7%</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<div class="w-3.5 h-3.5 rounded bg-secondary"></div>
+<span class="font-body-md text-body-md font-semibold text-primary">Pulau Madura</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-title-sm font-bold text-primary">486</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-highest px-1.5 py-0.5 rounded">22.6%</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<div class="w-3.5 h-3.5 rounded bg-surface-tint"></div>
+<span class="font-body-md text-body-md font-semibold text-primary">Jawa Tengah &amp; DIY &amp; Jabar</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-title-sm font-bold text-primary">234</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-highest px-1.5 py-0.5 rounded">10.9%</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<div class="w-3.5 h-3.5 rounded bg-secondary-fixed-dim"></div>
+<span class="font-body-md text-body-md font-semibold text-primary">Luar Jawa (Sumatera, Kalimantan, NTB)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-title-sm font-bold text-primary">188</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-highest px-1.5 py-0.5 rounded">8.8%</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-2 text-center">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tersedia perwakilan 14 Korda Ikatan Alumni Santri Santri Damanhuri Romly</span>
+</div>
+</div>
+</div>
+<!-- Chart 3: Tren Arus Kas Syariah & Digital Payment 2026 (Full Width Bar/Line Overview) -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Laporan Realisasi Transaksi Keuangan</span>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">Tren Kas Syahriah &amp; Digital Infaq Syariah (Januari - Juni 2026)</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded bg-surface-container-high text-primary font-semibold">Integrasi BSI, Bank Muamalat &amp; QRIS</span>
+</div>
+</div>
+<!-- SVG Monthly Column & Trend Representation -->
+<div class="w-full bg-surface-container-low p-space-md rounded-xl overflow-x-auto">
+<div class="min-w-[640px] flex flex-col gap-2">
+<div class="h-44 w-full flex items-end justify-between gap-4 pt-6 px-4">
+<!-- Jan -->
+<div class="flex-1 flex flex-col items-center gap-2 h-full justify-end">
+<div class="text-[11px] font-bold text-on-surface-variant font-title-sm">Rp 790 Jt</div>
+<div class="w-full max-w-[42px] bg-primary rounded-t-sm" style="height: 65%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Januari</span>
+</div>
+<!-- Feb -->
+<div class="flex-1 flex flex-col items-center gap-2 h-full justify-end">
+<div class="text-[11px] font-bold text-on-surface-variant font-title-sm">Rp 810 Jt</div>
+<div class="w-full max-w-[42px] bg-primary rounded-t-sm" style="height: 72%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Februari</span>
+</div>
+<!-- Mar (Ramadhan Peak) -->
+<div class="flex-1 flex flex-col items-center gap-2 h-full justify-end relative">
+<span class="absolute -top-3 px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed text-[10px] font-bold">Puncak Infaq</span>
+<div class="text-[11px] font-bold text-secondary font-title-sm">Rp 985 Jt</div>
+<div class="w-full max-w-[42px] bg-secondary rounded-t-sm" style="height: 98%;"></div>
+<span class="font-label-sm text-label-sm text-primary font-bold">Maret (Ramadhan)</span>
+</div>
+<!-- Apr -->
+<div class="flex-1 flex flex-col items-center gap-2 h-full justify-end">
+<div class="text-[11px] font-bold text-on-surface-variant font-title-sm">Rp 842 Jt</div>
+<div class="w-full max-w-[42px] bg-primary rounded-t-sm" style="height: 78%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">April (Aktual)</span>
+</div>
+<!-- Mei (Est) -->
+<div class="flex-1 flex flex-col items-center gap-2 h-full justify-end opacity-60">
+<div class="text-[11px] font-bold text-on-surface-variant font-title-sm">Rp 830 Jt*</div>
+<div class="w-full max-w-[42px] bg-outline-variant rounded-t-sm" style="height: 74%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mei (Proyeksi)</span>
+</div>
+<!-- Jun (Est) -->
+<div class="flex-1 flex flex-col items-center gap-2 h-full justify-end opacity-60">
+<div class="text-[11px] font-bold text-on-surface-variant font-title-sm">Rp 860 Jt*</div>
+<div class="w-full max-w-[42px] bg-outline-variant rounded-t-sm" style="height: 80%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Juni (Proyeksi)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Operational Tables (2 Columns Split) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg">
+<!-- Table 1: Live Antrian & Verifikasi Sambang Santri (6 Cols) -->
+<div class="xl:col-span-6 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Lalu Lintas Keamanan Kampus</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Verifikasi Sambang Santri Pekan Ini</h3>
+</div>
+<a class="font-label-sm text-label-sm text-primary font-bold hover:underline flex items-center gap-1" href="#">
+              Buka Semua <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Sistem tiket barcode pintu gerbang utama &amp; validasi mahram santri.</p>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<tr>
+<th class="p-2.5 rounded-l">Santri &amp; Kamar</th>
+<th class="p-2.5">Wali / Mahram</th>
+<th class="p-2.5">Jadwal Sesi</th>
+<th class="p-2.5 rounded-r">Status Pos</th>
+</tr>
+</thead>
+<tbody class="text-on-surface">
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="p-2.5">
+<div class="font-title-sm text-title-sm text-primary font-bold">M. Farhan Al-Ghifari</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Asrama Al-Falah • B-04</span>
+</td>
+<td class="p-2.5">
+<div>H. Romli Manshur</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ayah Kandung</span>
+</td>
+<td class="p-2.5">
+<span class="font-title-sm text-title-sm font-semibold">Hari ini, 09.30</span>
+</td>
+<td class="p-2.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-bold">Terverifikasi</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="p-2.5">
+<div class="font-title-sm text-title-sm text-primary font-bold">Naila Zahra Robbani</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Khadijah Putri • D-12</span>
+</td>
+<td class="p-2.5">
+<div>Ny. Maryam Fauzi</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ibu Kandung</span>
+</td>
+<td class="p-2.5">
+<span class="font-title-sm text-title-sm font-semibold">Hari ini, 10.15</span>
+</td>
+<td class="p-2.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-bold">Cek Identitas</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="p-2.5">
+<div class="font-title-sm text-title-sm text-primary font-bold">Ahmad Syauqi Bilal</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hidayatullah • A-02</span>
+</td>
+<td class="p-2.5">
+<div>Hasan Basri</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Paman (Kuasa Wali)</span>
+</td>
+<td class="p-2.5">
+<span class="font-title-sm text-title-sm font-semibold">Hari ini, 13.00</span>
+</td>
+<td class="p-2.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-bold">Terverifikasi</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="p-2.5">
+<div class="font-title-sm text-title-sm text-primary font-bold">Zulfa Ainun Najwa</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fathimah Putri • C-08</span>
+</td>
+<td class="p-2.5">
+<div>Drs. H. Mulyono</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ayah Kandung</span>
+</td>
+<td class="p-2.5">
+<span class="font-title-sm text-title-sm font-semibold">Besok, 08.45</span>
+</td>
+<td class="p-2.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-bold">Menunggu</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="mt-space-md pt-2 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Menampilkan 4 dari 312 Reservasi Terjadwal</span>
+<button class="text-secondary font-bold hover:underline">Scan QR Wali Santri →</button>
+</div>
+</div>
+<!-- Table 2: Status Penerimaan Santri Baru (PSB 2026/2027) (6 Cols) -->
+<div class="xl:col-span-6 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Penerimaan Santri Baru</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Seleksi PSB TA 2026/2027</h3>
+</div>
+<a class="font-label-sm text-label-sm text-primary font-bold hover:underline flex items-center gap-1" href="#">
+              Portal PSB <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Pemantauan seleksi tes qira'atul kutub, wawancara wali, dan daftar ulang.</p>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<tr>
+<th class="p-2.5 rounded-l">No. Registrasi</th>
+<th class="p-2.5">Nama Calon Santri</th>
+<th class="p-2.5">Pilihan Jenjang</th>
+<th class="p-2.5 rounded-r">Tahap Seleksi</th>
+</tr>
+</thead>
+<tbody class="text-on-surface">
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="p-2.5 font-label-sm text-label-sm font-bold text-secondary">
+                    PSB-26-00481
+                  </td>
+<td class="p-2.5">
+<div class="font-title-sm text-title-sm text-primary font-bold">Muhammad Dzaki Firdaus</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sidoarjo • Jalur Reguler</span>
+</td>
+<td class="p-2.5">
+<span class="font-body-sm text-body-sm font-semibold">MTs Terpadu</span>
+</td>
+<td class="p-2.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-bold">Lulus / Bayar Uang Masuk</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="p-2.5 font-label-sm text-label-sm font-bold text-secondary">
+                    PSB-26-00482
+                  </td>
+<td class="p-2.5">
+<div class="font-title-sm text-title-sm text-primary font-bold">Afifah Zahratun Nisa</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bangkalan • Prestasi Tahfidz</span>
+</td>
+<td class="p-2.5">
+<span class="font-body-sm text-body-sm font-semibold">MA Keagamaan</span>
+</td>
+<td class="p-2.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-bold">Tes Baca Kitab (88/100)</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="p-2.5 font-label-sm text-label-sm font-bold text-secondary">
+                    PSB-26-00483
+                  </td>
+<td class="p-2.5">
+<div class="font-title-sm text-title-sm text-primary font-bold">Abdul Wahab Mujahid</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Probolinggo • Reguler</span>
+</td>
+<td class="p-2.5">
+<span class="font-body-sm text-body-sm font-semibold">SMP Plus</span>
+</td>
+<td class="p-2.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-bold">Lulus Seleksi Tahfidz</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="p-2.5 font-label-sm text-label-sm font-bold text-secondary">
+                    PSB-26-00484
+                  </td>
+<td class="p-2.5">
+<div class="font-title-sm text-title-sm text-primary font-bold">Raihan Zaky Kurniawan</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Banyuwangi • Reguler</span>
+</td>
+<td class="p-2.5">
+<span class="font-body-sm text-body-sm font-semibold">SMA Unggulan</span>
+</td>
+<td class="p-2.5">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-bold">Wawancara Pengasuh</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="mt-space-md pt-2 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Total 642 Terdaftar • Kuota Tersedia: 38 Kursi</span>
+<button class="text-secondary font-bold hover:underline">Kelola Data Calon Santri →</button>
+</div>
+</div>
+</div>
+<!-- Quick Management & Executive CMS Notification Bar -->
+<div class="bg-primary text-on-primary p-space-lg rounded-xl shadow-lg flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-[28px]">notifications_active</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-secondary-fixed font-bold">Warta Utama Menunggu Persetujuan Majlis</span>
+<span class="font-body-sm text-body-sm text-on-primary-container">
+            Draft: "Peringatan Haul Akbar &amp; Wisuda Sanad Al-Qur'an Ke-48 Pondok Pesantren Damanhuri Romly" telah siap dipublikasikan ke Portal Publik.
+          </span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<button class="px-space-md py-2 bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 rounded font-label-md text-label-md transition-colors">
+          Pratinjau Draf
+        </button>
+<button class="px-space-md py-2 bg-secondary-fixed text-on-secondary-fixed font-bold rounded font-label-md text-label-md hover:bg-secondary-fixed-dim transition-colors shadow-sm">
+          Setujui &amp; Publikasikan Sekarang
+        </button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
